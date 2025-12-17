@@ -390,6 +390,11 @@ header.optimize-banner-p13n>h1 {
   border:none;
   cursor: pointer;
 }
+@media (max-width:767px){
+  .summary .container .links button {
+    font-size:14px;
+  }
+}
 .summary .container .links button.active {
   color: var(--main-color);
   font-weight: bold;
