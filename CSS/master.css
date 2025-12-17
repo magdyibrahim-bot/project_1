@@ -383,6 +383,12 @@ header.optimize-banner-p13n>h1 {
   display: flex;
   gap:20px;
 }
+@media (max-width:767px){
+  .summary .container .links {
+    gap:10px;
+  }
+
+}
 .summary .container .links button {
   position: relative;
   background-color: var(--color-white);
