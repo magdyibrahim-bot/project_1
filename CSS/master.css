@@ -464,12 +464,13 @@ header.optimize-banner-p13n>h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: 0.3s;
 }
-
 .fav-btn i {
   color: #555;
   font-size: 16px;
 }
-
+.fav-btn i.active{
+  color: red;
+}
 .fav-btn:hover i {
   color: red;
 }
@@ -497,8 +498,8 @@ header.optimize-banner-p13n>h1 {
   color: var(--main-color);
 }
 /* End Summary */
+/*============================================================================================*/
 /* Start Discount */
-
 .ultra-banner {
   position: relative;
   min-height: 30vh;
@@ -647,6 +648,7 @@ header.optimize-banner-p13n>h1 {
   }
 }
 /* End Banner */
+/*============================================================================================*/
 /* Start Footer */
 .ultra-footer {
   position: relative;
