@@ -12,7 +12,6 @@ links.forEach(link => {
     }
 });
 
-
 copyBtn.addEventListener("click", () => {
     navigator.clipboard.writeText(promo.value);
 
@@ -37,3 +36,4 @@ document.querySelectorAll(".summary .links button").forEach(btn => {
         btn.classList.add("active");
     });
 });
+
