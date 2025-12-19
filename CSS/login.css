@@ -250,7 +250,7 @@
   }
 
   .login .form form.active {
-    width: 100%;
+    width: 100%; 
     position: relative; 
     top: 0;             
     margin: 20px 0;    
