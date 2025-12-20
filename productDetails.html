@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Main Css Styling File -->
+        <link rel="stylesheet" href="CSS/master.css" />
+        <link rel="stylesheet" href="CSS/product-details.css">
+        <!-- Normalize Css Styling File -->
+        <link rel="stylesheet" href="CSS/normalize.css" />
+        <!-- Font Awesome Css Styling File -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+        />
+        <title>Home</title>
+    </head>
+
+    <body>
+        <!-- Start Header -->
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html">LOGO</a></div>
+                <nav>
+                    <ul class="links">
+                        <li><a class="link" href="index.html">Home</a></li>
+                        <li><a class="link" href="about.html">About</a></li>
+                        <li><a class="link" href="shop.html">Shop</a></li>
+                        <li><a class="link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li>
+                            <a href="wichlist.html"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Content -->
+        <div class="product-details">
+            <div class="container">
+                <div class="product-wrapper">
+                    <div class="product-images">
+                        <img class="main-img" src="img/17_cver_1.png">
+                        <div class="thumbs">
+                            <img src="img/17_cver_1.png">
+                            <img src="img/17_cver.png">
+                            <img src="img/17_cver_2.png">
+                        </div>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h1>Apple iPhone 14 Pro Max</h1>
+                        <span class="price">299 EGP <span><del>$350 EGP</del></span></span>
+                        <div class="rating">⭐⭐⭐⭐☆</div>
+                        <p class="desc">
+                            Premium shockproof case with modern design.
+                        </p>
+                        <select id="model">
+                            <option>iPhone 14</option>
+                            <option>Samsung S23</option>
+                        </select>
+
+                        <select id="color">
+                            <option>Black</option>
+                            <option>Blue</option>
+                        </select>
+
+                        <input id="quantity" type="number" value="1" min="1" max="10" style="width: 60px; padding: 5px; margin: 10px 0;">
+                        <button class="add-cart"><i class="fa-solid fa-bag-shopping"></i>Add to Cart</button>
+                        <button class="add-cart"><i class="fa-regular fa-heart"></i>Add to Whichlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+        <!-- Start Footer -->
+        <footer class="ultra-footer">
+            <div class="footer-glass"></div>
+
+            <div class="footer-inner">
+                <div class="footer-section about">
+                    <h3> <i class="fa-solid fa-address-card"></i> About</h3>
+                    <p>Premium phone accessories with modern designs. Stay trendy with our exclusive collection.</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3><i class="fa-solid fa-forward-fast"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-shop"></i> Shop</a></li>
+                        <li><a href="#"><i class="fa-solid fa-percent"></i> Offers</a></li>
+                        <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3><i class="fa-solid fa-address-book"></i>Contact</h3>
+                    <p><i class="fa-solid fa-envelope"></i> Email: support@yoursite.com</p>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +20 123 456 789</p>
+                    <div class="socials">
+                        <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 YourSite. All Rights Reserved.
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <script src="JS/main.js"></script>
+        <script src="JS/product-details.js"></script>
+    </body>
+</html>

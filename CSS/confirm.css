@@ -1,0 +1,54 @@
+.confirmation {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.message {
+  text-align: center;
+}
+.message i {
+  font-size: 80px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+.message h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #211c24;
+}
+.message p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.message .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #211c24;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.message .btn:hover {
+  background: #2a2430;
+}
+
+.order-summary {
+  width: 100%;
+  max-width: 600px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.order-summary #order-items {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.order-summary .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}

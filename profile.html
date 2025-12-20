@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Main Css Styling File -->
+        <link rel="stylesheet" href="CSS/master.css" />
+        <link rel="stylesheet" href="CSS/profile.css" />
+        <!-- Normalize Css Styling File -->
+        <link rel="stylesheet" href="CSS/normalize.css" />
+        <!-- Font Awesome Css Styling File -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+        />
+        <title>Home</title>
+    </head>
+
+    <body>
+        <!-- Start Header -->
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html">LOGO</a></div>
+                <nav>
+                    <ul class="links">
+                        <li><a class="link" href="index.html">Home</a></li>
+                        <li><a class="link" href="about.html">About</a></li>
+                        <li><a class="link" href="shop.html">Shop</a></li>
+                        <li><a class="link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li>
+                            <a href="wichlist.html"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <section class="profile">
+            <div class="container">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                <div class="user-info">
+                    <img src="img/profile_avatar.png" alt="User" class="avatar">
+                    <h3>John Doe</h3>
+                    <p>john@example.com</p>
+                </div>
+                <ul class="tabs">
+                    <li><a href="#account" class="active"><i class="fa-solid fa-user"></i> Account</a></li>
+                    <li><a href="#orders"><i class="fa-solid fa-box"></i> Orders</a></li>
+                    <li><a href="#settings"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                </ul>
+                </aside>
+
+                <!-- Content -->
+                <div class="profile-content">
+                <!-- Account Info -->
+                <div id="account" class="tab-content active">
+                    <h2>Account Information</h2>
+                    <div class="account-details">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john@example.com</p>
+                    <p><strong>Phone:</strong> +20 123 456 789</p>
+                    </div>
+                </div>
+
+                <!-- Orders -->
+                <div id="orders" class="tab-content">
+                    <h2>My Orders</h2>
+                    <div class="orders-list">
+                    <div class="order-card">
+                        <img src="img/17_cver_1.png" alt="Product">
+                        <div class="order-info">
+                        <h4>Apple iPhone 14 Pro Max Case</h4>
+                        <p>Quantity: 2</p>
+                        <p>Price: 350 EGP</p>
+                        <p>Status: <span class="delivered">Delivered</span></p>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <img src="img/17_cver_2.png" alt="Product">
+                        <div class="order-info">
+                        <h4>Samsung S23 Case</h4>
+                        <p>Quantity: 1</p>
+                        <p>Price: 120 EGP</p>
+                        <p>Status: <span class="pending">Pending</span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Settings -->
+                <div id="settings" class="tab-content">
+                    <h2>Settings</h2>
+                    <form>
+                    <div class="profile-pic">
+                        <img src="img/profile_avatar.png" alt="User" style="width: 200px;">
+                        <input type="file" name="avatar">
+                    </div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" value="John Doe">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="john@example.com">
+
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="New Password">
+                    <button type="submit">Update Profile</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Footer -->
+        <footer class="ultra-footer">
+            <div class="footer-glass"></div>
+
+            <div class="footer-inner">
+                <div class="footer-section about">
+                    <h3> <i class="fa-solid fa-address-card"></i> About</h3>
+                    <p>Premium phone accessories with modern designs. Stay trendy with our exclusive collection.</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3><i class="fa-solid fa-forward-fast"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-shop"></i> Shop</a></li>
+                        <li><a href="#"><i class="fa-solid fa-percent"></i> Offers</a></li>
+                        <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3><i class="fa-solid fa-address-book"></i>Contact</h3>
+                    <p><i class="fa-solid fa-envelope"></i> Email: support@yoursite.com</p>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +20 123 456 789</p>
+                    <div class="socials">
+                        <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 YourSite. All Rights Reserved.
+            </div>
+        </footer>
+        
+
+        <!-- End Footer -->
+        <script src="JS/main.js"></script>
+        <script src="JS/profile.js"></script>
+    </body>
+</html>

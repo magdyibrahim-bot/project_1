@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Main Css Styling File -->
         <link rel="stylesheet" href="CSS/master.css" />
+        <link rel="stylesheet" href="CSS/contact.css" />
         <!-- Normalize Css Styling File -->
         <link rel="stylesheet" href="CSS/normalize.css" />
         <!-- Font Awesome Css Styling File -->
@@ -33,10 +34,10 @@
                     </ul>
                     <ul class="icons">
                         <li>
-                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="wichlist.html"><i class="fa-regular fa-heart"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
                         </li>
                         <li>
                             <a href="login.html"><i class="fa-regular fa-user"></i></a>
@@ -47,7 +48,43 @@
         </header>
         <!-- End Header -->
         <!-- Start Content -->
-        
+        <section class="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="contact-wrapper">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+                    <ul>
+                    <li><i class="fa-solid fa-envelope"></i> Email: support@yoursite.com</li>
+                    <li><i class="fa-solid fa-phone"></i> Phone: +20 123 456 789</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Address: Cairo, Egypt</li>
+                    </ul>
+                    <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- End Content -->
         <!-- Start Footer -->
         <footer class="ultra-footer">

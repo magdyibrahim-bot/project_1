@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main Css Styling File -->
+    <link rel="stylesheet" href="CSS/master.css" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
+    <!-- Normalize Css Styling File -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Css Styling File -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+        <div class="logo"><a href="index.html">LOGO</a></div>
+        <nav>
+            <ul class="links">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="about.html">About</a></li>
+                <li><a class="link" href="shop.html">Shop</a></li>
+                <li><a class="link" href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="icons">
+                <li>
+                    <a href="wichlist.html"><i class="fa-regular fa-heart"></i></a>
+                </li>
+                <li>
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Checkout Content -->
+  <section class="checkout">
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="checkout-wrapper">
+        <!-- Billing Form -->
+        <form id="checkout-form">
+          <h2>Billing Details</h2>
+          <label>Full Name</label>
+          <input type="text" id="name" required placeholder="Enter your full name">
+          <label>Email</label>
+          <input type="email" id="email" required placeholder="Enter your email">
+          <label>Phone</label>
+          <input type="tel" id="phone" required placeholder="Enter your phone number">
+          <label>Address</label>
+          <input type="text" id="address" required placeholder="Enter your address">
+
+          <h2>Payment</h2>
+          <select id="payment" required>
+            <option value="">Select Payment Method</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="cash">Cash on Delivery</option>
+          </select>
+
+          <button type="submit">Place Order</button>
+        </form>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div id="cart-items"></div>
+          <h3>Total: <span id="total">0 EGP</span></h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="JS/checkout.js"></script>
+</body>
+</html>
